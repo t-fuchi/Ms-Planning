@@ -33,8 +33,6 @@ st.markdown("<p class='title'><font size='3'>ご訪問いただき、ありが�
 st.markdown("  ")
 st.markdown("  ")
 st.markdown("  ")
-st.markdown("  ")
-st.markdown("  ")
 st.markdown("<h1 style='text-align: center;'>予定の準備を計画しましょう！</h1>", unsafe_allow_html=True)
 d = st.date_input('予定の日にち')
 event = st.text_input('予定のタイトル', placeholder='結婚式、遠足など')
@@ -50,8 +48,6 @@ if st.button('準備計画を作成する'):
   st.session_state['plan'] = True
 
 if st.session_state['plan']:
-  st.markdown("  ")
-  st.markdown("  ")
   st.markdown("  ")
   st.markdown("  ")
   st.markdown("<h1 style='text-align: center;'>計画が作成されました！</h1>", unsafe_allow_html=True)
